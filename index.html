@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmashSlot — Platform Booking Lapangan Padel untuk Pemilik Venue</title>
+  <meta name="description" content="Terima booking lapangan padel online tanpa bentrok jadwal. Halaman venue sendiri, pembayaran manual, dan dashboard admin untuk pemilik venue di Indonesia.">
+  <meta name="theme-color" content="#0b3d2e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="SmashSlot beranda"><span class="logo__ball"></span>SmashSlot</a>
+      <button class="nav__toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="menu">☰</button>
+      <nav class="nav__menu" id="menu">
+        <a href="#masalah">Masalah</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#cara-kerja">Cara Kerja</a>
+        <a href="#demo">Demo</a>
+        <a href="#faq">FAQ</a>
+        <a href="#daftar" class="btn btn--primary btn--sm">Daftar Venue</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <span class="pill">🎾 Untuk pemilik venue padel Indonesia</span>
+          <h1>Booking lapangan padel, <em>tanpa bentrok jadwal.</em></h1>
+          <p class="lead">Berhenti catat booking lewat WhatsApp. Beri customer halaman venue sendiri untuk lihat slot real-time dan booking tanpa login — Anda tinggal verifikasi pembayaran.</p>
+          <div class="hero__cta">
+            <a href="#daftar" class="btn btn--primary btn--lg">Daftar sebagai Pemilik Venue</a>
+            <a href="#demo" class="btn btn--ghost btn--lg">Coba Demo Booking</a>
+          </div>
+          <ul class="hero__trust">
+            <li>✓ Tanpa payment gateway</li>
+            <li>✓ Mobile-friendly</li>
+            <li>✓ Customer tanpa akun</li>
+          </ul>
+        </div>
+
+        <div class="mock" aria-hidden="true">
+          <div class="mock__bar"><span></span><span></span><span></span><b>smashslot.id/venue/padel-arena</b></div>
+          <div class="mock__body">
+            <h3>Padel Arena Jakarta</h3>
+            <p class="muted">Court 1 · Sabtu, 14 Nov</p>
+            <div class="slots slots--static">
+              <span class="slot is-booked">08:00</span>
+              <span class="slot">09:00</span>
+              <span class="slot is-selected">10:00</span>
+              <span class="slot">11:00</span>
+              <span class="slot is-booked">12:00</span>
+              <span class="slot">13:00</span>
+            </div>
+            <div class="mock__total"><span>Total 1 jam</span><b>Rp 200.000</b></div>
+            <div class="mock__btn">Konfirmasi Booking</div>
+          </div>
+          <div class="float float--a">✅ Booking baru masuk!</div>
+          <div class="float float--b">💸 Pembayaran terverifikasi</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div><b>0</b><span>double booking</span></div>
+        <div><b>24/7</b><span>booking online</span></div>
+        <div><b>&lt; 2 menit</b><span>customer selesai booking</span></div>
+        <div><b>Multi</b><span>lapangan &amp; venue</span></div>
+      </div>
+    </section>
+
+    <!-- MASALAH -->
+    <section class="section" id="masalah">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Masalah yang kami selesaikan</span>
+          <h2>Booking manual itu melelahkan dan rawan salah</h2>
+        </div>
+        <div class="cards cards--3">
+          <article class="card card--problem">
+            <div class="icon">💬</div>
+            <h3>Booking lewat WhatsApp</h3>
+            <p>Chat bolak-balik, jadwal dicatat manual, dan mudah terjadi bentrok antar customer.</p>
+          </article>
+          <article class="card card--problem">
+            <div class="icon">👀</div>
+            <h3>Slot tidak transparan</h3>
+            <p>Customer sulit tahu jam mana yang masih kosong, sehingga banyak calon pemain batal booking.</p>
+          </article>
+          <article class="card card--problem">
+            <div class="icon">🧾</div>
+            <h3>Pembayaran berantakan</h3>
+            <p>Bukti transfer tercecer di chat dan status bayar sulit dilacak satu per satu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FITUR -->
+    <section class="section section--tint" id="fitur">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Fitur utama</span>
+          <h2>Semua yang dibutuhkan venue padel Anda</h2>
+          <p>Dari halaman publik hingga dashboard admin, dalam satu platform.</p>
+        </div>
+        <div class="cards cards--3">
+          <article class="card"><div class="icon">🌐</div><h3>Halaman Venue Sendiri</h3><p>Setiap venue punya halaman publik, misalnya <code>/venue/nama-venue</code>, berisi profil, foto, dan daftar lapangan.</p></article>
+          <article class="card"><div class="icon">📅</div><h3>Jadwal &amp; Slot Online</h3><p>Atur jam operasional dan durasi slot (60 atau 90 menit). Slot yang sudah dibooking otomatis tertutup.</p></article>
+          <article class="card"><div class="icon">🛡️</div><h3>Anti Double Booking</h3><p>Sistem memvalidasi lapangan, tanggal, dan jam sehingga tidak ada dua booking di slot yang sama.</p></article>
+          <article class="card"><div class="icon">🏟️</div><h3>Multi Lapangan</h3><p>Kelola banyak lapangan dengan harga per jam, tipe, foto, dan status aktif masing-masing.</p></article>
+          <article class="card"><div class="icon">🏦</div><h3>Pembayaran Manual</h3><p>Tampilkan rekening bank atau QRIS. Admin cukup verifikasi lalu ubah status menjadi confirmed.</p></article>
+          <article class="card"><div class="icon">📊</div><h3>Dashboard Admin</h3><p>Pantau booking hari ini, booking mendatang, estimasi pendapatan, dan status pembayaran. Tersedia tampilan list dan kalender.</p></article>
+          <article class="card"><div class="icon">📲</div><h3>Link WhatsApp</h3><p>Customer bisa langsung menghubungi venue, dan admin bisa menghubungi customer dengan satu klik.</p></article>
+          <article class="card"><div class="icon">🔐</div><h3>Data Terisolasi</h3><p>Arsitektur multitenant: setiap pemilik venue hanya dapat mengakses data miliknya sendiri.</p></article>
+          <article class="card"><div class="icon">📱</div><h3>Mobile-First</h3><p>Dirancang untuk booking lewat HP, tempat mayoritas customer Indonesia berada.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARA KERJA -->
+    <section class="section" id="cara-kerja">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Cara kerja</span>
+          <h2>Sederhana untuk customer, praktis untuk admin</h2>
+        </div>
+        <div class="flows">
+          <div class="flow">
+            <h3>👤 Customer</h3>
+            <ol>
+              <li><b>Buka halaman venue</b><span>Lihat info venue &amp; daftar lapangan.</span></li>
+              <li><b>Pilih lapangan, tanggal, jam</b><span>Hanya slot kosong yang bisa dipilih.</span></li>
+              <li><b>Isi nama &amp; WhatsApp</b><span>Tanpa daftar akun.</span></li>
+              <li><b>Konfirmasi &amp; bayar</b><span>Transfer/QRIS sesuai instruksi, lalu hubungi admin.</span></li>
+            </ol>
+          </div>
+          <div class="flow flow--dark">
+            <h3>🧑‍💼 Admin Venue</h3>
+            <ol>
+              <li><b>Daftar &amp; buat profil venue</b><span>Nama, alamat, WhatsApp, jam operasional.</span></li>
+              <li><b>Tambah lapangan &amp; harga</b><span>Atur slot dan ketersediaan.</span></li>
+              <li><b>Terima booking</b><span>Status awal <code>pending_payment</code>.</span></li>
+              <li><b>Verifikasi pembayaran</b><span>Ubah ke confirmed, cancelled, atau completed.</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="section section--tint" id="demo">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Coba sendiri</span>
+          <h2>Demo halaman booking customer</h2>
+          <p>Simulasi interaktif seperti yang akan dilihat customer Anda.</p>
+        </div>
+        <div class="demo">
+          <form class="demo__form" id="demoForm" novalidate>
+            <div class="field">
+              <label for="court">Lapangan</label>
+              <select id="court">
+                <option value="150000">Court 1 — Indoor (Rp 150.000/jam)</option>
+                <option value="200000" selected>Court 2 — Panoramic (Rp 200.000/jam)</option>
+                <option value="250000">Court 3 — Premium (Rp 250.000/jam)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="date">Tanggal</label>
+              <input type="date" id="date">
+            </div>
+            <div class="field">
+              <span class="label">Durasi</span>
+              <div class="seg" role="radiogroup" aria-label="Durasi">
+                <label><input type="radio" name="dur" value="60" checked><span>60 menit</span></label>
+                <label><input type="radio" name="dur" value="90"><span>90 menit</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="label">Pilih jam</span>
+              <div class="slots" id="slots" role="radiogroup" aria-label="Slot jam"></div>
+              <small class="muted">Slot abu-abu sudah dibooking.</small>
+            </div>
+            <div class="field two">
+              <div><label for="name">Nama</label><input id="name" placeholder="Nama lengkap" autocomplete="name"></div>
+              <div><label for="wa">No. WhatsApp</label><input id="wa" type="tel" placeholder="08xxxxxxxxxx" autocomplete="tel"></div>
+            </div>
+            <div class="field">
+              <label for="notes">Catatan (opsional)</label>
+              <textarea id="notes" rows="2" placeholder="Misal: sewa raket 2"></textarea>
+            </div>
+          </form>
+
+          <aside class="demo__summary" aria-live="polite">
+            <h3>Ringkasan Booking</h3>
+            <dl>
+              <dt>Lapangan</dt><dd id="sCourt">-</dd>
+              <dt>Tanggal</dt><dd id="sDate">-</dd>
+              <dt>Jam</dt><dd id="sTime">Belum dipilih</dd>
+              <dt>Durasi</dt><dd id="sDur">-</dd>
+            </dl>
+            <div class="total"><span>Total</span><b id="sTotal">Rp 0</b></div>
+            <button class="btn btn--primary btn--block" id="confirmBtn" type="button">Konfirmasi Booking</button>
+            <p class="error" id="demoError" role="alert" hidden></p>
+            <div class="result" id="result" hidden>
+              <span class="status">pending_payment</span>
+              <p><b>Booking dibuat!</b> Transfer ke <b>BCA 123 456 7890</b> a.n. Padel Arena atau scan QRIS, lalu kirim bukti ke admin.</p>
+              <a class="btn btn--wa btn--block" id="waLink" target="_blank" rel="noopener">Hubungi Venue via WhatsApp</a>
+            </div>
+            <small class="muted">*Hanya demo, data tidak disimpan.</small>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Pertanyaan yang sering diajukan</h2>
+        </div>
+        <details><summary>Apakah customer harus membuat akun?</summary><p>Tidak. Customer cukup mengisi nama, nomor WhatsApp, dan memilih jadwal. Login hanya untuk admin venue.</p></details>
+        <details><summary>Bagaimana pembayarannya?</summary><p>Pembayaran manual lewat transfer bank atau QRIS. Admin memverifikasi lalu mengubah status booking. Payment gateway otomatis bisa menyusul di versi lanjutan.</p></details>
+        <details><summary>Bisakah satu pemilik punya banyak lapangan atau lokasi?</summary><p>Bisa. Satu tenant dapat memiliki beberapa venue, dan setiap venue dapat memiliki banyak lapangan.</p></details>
+        <details><summary>Bagaimana mencegah jadwal bentrok?</summary><p>Sistem memvalidasi kombinasi lapangan, tanggal, dan jam. Slot yang sudah dibooking otomatis ditutup.</p></details>
+        <details><summary>Apakah bisa dipakai lewat HP?</summary><p>Ya, seluruh halaman dirancang mobile-friendly.</p></details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="daftar">
+      <div class="container cta__inner">
+        <div>
+          <h2>Siap bikin venue Anda bebas bentrok jadwal?</h2>
+          <p>Daftarkan venue Anda dan mulai terima booking online hari ini.</p>
+        </div>
+        <form class="cta__form" id="signupForm" novalidate>
+          <input type="text" id="suName" placeholder="Nama venue / bisnis" required aria-label="Nama venue">
+          <input type="email" id="suEmail" placeholder="Email" required aria-label="Email">
+          <button class="btn btn--accent btn--lg" type="submit">Daftar Gratis</button>
+          <p class="cta__msg" id="suMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--light"><span class="logo__ball"></span>SmashSlot</a>
+      <p>Platform booking lapangan padel multitenant untuk pemilik venue di Indonesia.</p>
+      <small>© <span id="year"></span> SmashSlot. Semua hak dilindungi.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
